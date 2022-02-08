@@ -45,7 +45,7 @@ This project was developed with the following technologies:
   - [MetaMask](https://metamask.io/)
  
 
-###🕹 Requirements
+### 🕹 Requirements
 
 To run the application you'll need:
 * [Git](https://git-scm.com)
