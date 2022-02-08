@@ -13,7 +13,7 @@
 </div>
 
 
-## About
+## ℹ About
 
 - This decentralized application allows you to buy or mint a collection of funny popcorn NFTS.
 - This is a project made for the company [CinéCapsule](https://www.cinecapsule.com/).
@@ -25,7 +25,7 @@ I was inspired by tutorials and repos from HashLips 👄:
 - [ℹ️ Website](https://hashlips.online/HashLips)
 
 
-## Built With
+## 🛠 Built With
 
 This project was developed with the following technologies:
 
@@ -45,7 +45,7 @@ This project was developed with the following technologies:
   - [MetaMask](https://metamask.io/)
  
 
-### Requirements
+###🕹 Requirements
 
 To run the application you'll need:
 * [Git](https://git-scm.com)
