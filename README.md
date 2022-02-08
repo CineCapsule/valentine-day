@@ -65,7 +65,7 @@ To run the application you'll need:
 * [npm](https://www.npmjs.com/)
 * [Hardhat](https://hardhat.org/)
 - Clone the repository:
-  * ```$ git clone : https://github.com/Margotte83/ValentineDay_DApp```
+  * ```$ git clone https://github.com/Margotte83/ValentineDay_DApp```
 
 Now go to project folder and run:
 
