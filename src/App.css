@@ -14,9 +14,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  width: 50%;
+  height: 80%;
+}
 img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   object-fit: cover;
 }
 button {
@@ -44,8 +49,9 @@ button.btn.btn-danger {
   padding: 10px;
   margin-top: 40px;
 }
+/*Responsive*/
 @media only screen and (max-width: 855px) {
   .App {
-    height: 230vh;
+    height: 150vh;
   }
 }
