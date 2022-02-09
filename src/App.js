@@ -16,6 +16,10 @@ import img10 from "./img/10.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+//Components import
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 //Address where the contract was deployed
 const VDaddress = "0xF2b9d1E3EFBb85720ed26B5a36B4D35462f12F01";
 
@@ -113,15 +117,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <nav className="navbar fixed-top navbar-dark bg-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              Valentine's Day App🍿
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Header />
       <div className="container">
         <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           <div className="col">
@@ -230,17 +226,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="footer">
-          <p>
-            Made with ❤️ by{" "}
-            <a
-              href="https://www.linkedin.com/in/marjorie-ngoupende-dev/"
-              target="_blank"
-            >
-              @Marjorie.N
-            </a>
-          </p>
-        </div>
+        <Footer />
       </div>
     </div>
   );
