@@ -13,7 +13,7 @@
 </div>
 
 
-## About
+## ℹ About
 
 - This decentralized application allows you to buy or mint a collection of funny popcorn NFTS.
 - This is a project made for the company [CinéCapsule](https://www.cinecapsule.com/).
@@ -24,8 +24,20 @@ I was inspired by tutorials and repos from HashLips 👄:
 - [📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
 - [ℹ️ Website](https://hashlips.online/HashLips)
 
+## 📝 Principles
 
-## Built With
+- Valentine Day's App (popcorn) is a decentralized application that allows you to mint NFTS from an interface.
+- By clicking on "BUY" there is the possibility to buy an NFT from a collection.
+- The price of 0.01 ETH (modifiable according to convenience) will be displayed in the Metamask wallet.
+- Once the transaction commits, the amount of NFTS decreases.
+- The NFT is accessible from the wallet with a designation: "PCC"
+
+* Json + img files stored on Pinata Cloud (for testing)
+* network ropsten (tests): Url (address on Infura) + account (private key wallet).
+* import contract address in wallet: 0xF2b9d1E3EFBb85720ed26B5a36B4D35462f12F01 (import PCC tokens)
+
+
+## 🛠 Built With
 
 This project was developed with the following technologies:
 
@@ -45,7 +57,7 @@ This project was developed with the following technologies:
   - [MetaMask](https://metamask.io/)
  
 
-### Requirements
+### 🕹 Requirements
 
 To run the application you'll need:
 * [Git](https://git-scm.com)
@@ -53,7 +65,7 @@ To run the application you'll need:
 * [npm](https://www.npmjs.com/)
 * [Hardhat](https://hardhat.org/)
 - Clone the repository:
-  * ```$ git clone : ```
+  * ```$ git clone https://github.com/Margotte83/ValentineDay_DApp```
 
 Now go to project folder and run:
 
