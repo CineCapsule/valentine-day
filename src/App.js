@@ -174,7 +174,7 @@ function App() {
         <div className="buyNft">
           <h1>Mint a Valentine Day's PopCorn ! 🍿</h1>
           {error && <p>{error}</p>}
-          <p className="count">{data.totalSupply} / 50</p>
+          <p className="count">{data.totalSupply} / 20</p>
           <p className="cost">
             Each PopCorn NFT costs {data.cost / 10 ** 18} eth (excluding gas
             fees)

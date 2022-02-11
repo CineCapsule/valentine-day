@@ -15,7 +15,7 @@ contract ValentineDay is ERC721Enumerable, Ownable {
     string public baseURI;
     string public baseExtension = ".json";
     uint256 public cost = 0.01 ether;
-    uint256 public maxSupply = 50;
+    uint256 public maxSupply = 20;
     uint256 public maxMintAmount = 20;
     bool public paused = false;
     mapping(address => bool) public whitelisted;
