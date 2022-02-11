@@ -1,5 +1,5 @@
 <h1 align=center>
-<img src="https://res.cloudinary.com/defpadn0s/image/upload/v1644589527/CC-valentine-day-DApp_ul03qp.png" />
+<img src="https://res.cloudinary.com/defpadn0s/image/upload/v1644593121/DAppVDCC_aufut2.png" />
 </h1>
 
 <div align="center">
