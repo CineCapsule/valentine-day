@@ -6,7 +6,7 @@ export default function Header(props) {
         <nav className="navbar fixed-top navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              Valentine's Day App🍿
+              CC Valentine's Day DApp🍿
             </a>
           </div>
         </nav>
