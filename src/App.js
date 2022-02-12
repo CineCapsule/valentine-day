@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import ValentineDay from "./artifacts/ValentineDay.json";
+import ValentineDay from "./artifacts/contracts/ValentineDay.sol/ValentineDay.json";
 import "./App.css";
 //My generated images
 import img1 from "./img/1.png";
@@ -98,9 +98,6 @@ function App() {
   //Transfer money from the contract to the contract owner's address
   async function withdraw() {
     if (typeof window.ethereum !== "undefined") {
-      let accounts = await window.ethereum.request({
-        method: "eth_requestAccounts",
-      });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(VDaddress, ValentineDay.abi, signer);
@@ -191,7 +188,7 @@ function App() {
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
           <div className="col-xs-2 col-sm-2">
             <a
-              href="#"
+              href="https://www.facebook.com/cinecapsuleofficial/"
               className="btn btn-lg btn-block kpx_btn-facebook"
               data-toggle="tooltip"
               data-placement="top"
@@ -203,25 +200,13 @@ function App() {
           </div>
           <div className="col-xs-2 col-sm-2">
             <a
-              href="#"
+              href="https://twitter.com/cine_capsule"
               className="btn btn-lg btn-block kpx_btn-twitter"
               data-toggle="tooltip"
               data-placement="top"
               title="Twitter"
             >
               <i className="fa fa-twitter fa-2x"></i>
-              <span className="hidden-xs"></span>
-            </a>
-          </div>
-          <div className="col-xs-2 col-sm-2">
-            <a
-              href="#"
-              className="btn btn-lg btn-block kpx_btn-google-plus"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Google Plus"
-            >
-              <i className="fa fa-google-plus fa-2x"></i>
               <span className="hidden-xs"></span>
             </a>
           </div>
