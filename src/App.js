@@ -21,7 +21,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //Address where the contract was deployed
-const VDaddress = "0xF2b9d1E3EFBb85720ed26B5a36B4D35462f12F01";
+const VDaddress = "0xE577704A583285eD5c1583d42125Cf0abE3cEb9C";
 
 function App() {
   const [error, setError] = useState("");

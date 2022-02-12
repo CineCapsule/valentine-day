@@ -23,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy:test": "hardhat run scripts/deploy.js",
+    "deploy:prod": "hardhat run scripts/deploy.js --network fuse",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
