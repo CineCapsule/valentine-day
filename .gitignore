@@ -30,4 +30,6 @@ typechain
 
 #Hardhat files
 cache
-artifacts
+build-info
+*.dbg.json
+@openzeppelin
