@@ -14,9 +14,9 @@ contract ValentineDay is ERC721Enumerable, Ownable {
 
     string public baseURI;
     string public baseExtension = ".json";
-    uint256 public cost = 8.5 ether;
+    uint256 public cost = 16 ether;
     uint256 public maxSupply = 20;
-    uint256 public maxMintAmount = 1;
+    uint256 public maxMintAmount = 2;
     bool public paused = false;
     mapping(address => bool) public whitelisted;
 
@@ -27,7 +27,7 @@ contract ValentineDay is ERC721Enumerable, Ownable {
         string memory _initBaseURI
     ) ERC721(_name, _symbol) {
         setBaseURI(_initBaseURI);
-        mint(msg.sender, 1);
+        mint(msg.sender, 2);
     }
 
     // internal

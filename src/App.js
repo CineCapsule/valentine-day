@@ -21,7 +21,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //Address where the contract was deployed
-const VDaddress = "0xE577704A583285eD5c1583d42125Cf0abE3cEb9C";
+const VDaddress = "0xeDc6102bc832989Aa7A7De39881f7F16c704b5af";
 
 function App() {
   const [error, setError] = useState("");
@@ -173,31 +173,19 @@ function App() {
           {error && <p>{error}</p>}
           <p className="count">{data.totalSupply} / 20</p>
           <p className="cost">
-            Each PopCorn NFT costs {data.cost / 10 ** 18} eth (excluding gas
-            fees)
+            Each PopCorn NFT costs ~$10 = ~9€ = {data.cost / 10 ** 18} FUSE (+
+            0.00016 FUSE gas fee)
           </p>
           <button type="button" className="btn btn-danger" onClick={mint}>
-            BUY
+            BUY 1 NFT
           </button>
-          {account[0] === "0x957e3b7c98ca23dbc89b7358f90ac1a8d5b2655e" && (
+          {account[0] === "0xDe9693723B4D0CCc06eb73f5E6Ce3B6dD555B504" && (
             <button type="button" className="btn btn-dark" onClick={withdraw}>
               Withdraw
             </button>
           )}
         </div>
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
-          <div className="col-xs-2 col-sm-2">
-            <a
-              href="https://www.facebook.com/cinecapsuleofficial/"
-              className="btn btn-lg btn-block kpx_btn-facebook"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Facebook"
-            >
-              <i className="fa fa-facebook fa-2x"></i>
-              <span className="hidden-xs"></span>
-            </a>
-          </div>
           <div className="col-xs-2 col-sm-2">
             <a
               href="https://twitter.com/cine_capsule"
@@ -207,6 +195,30 @@ function App() {
               title="Twitter"
             >
               <i className="fa fa-twitter fa-2x"></i>
+              <span className="hidden-xs"></span>
+            </a>
+          </div>
+          <div className="col-xs-2 col-sm-2">
+            <a
+              href="https://www.instagram.com/cine_capsule/?hl=en"
+              className="btn btn-lg btn-block kpx_btn-instagram"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Instagram"
+            >
+              <i className="fa fa-instagram fa-2x"></i>
+              <span className="hidden-xs"></span>
+            </a>
+          </div>
+          <div className="col-xs-2 col-sm-2">
+            <a
+              href="https://www.facebook.com/cinecapsuleofficial/"
+              className="btn btn-lg btn-block kpx_btn-facebook"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Facebook"
+            >
+              <i className="fa fa-facebook fa-2x"></i>
               <span className="hidden-xs"></span>
             </a>
           </div>

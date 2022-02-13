@@ -27,13 +27,13 @@ I was inspired by tutorials and repos from HashLips 👄:
 
 - Valentine Day's App (popcorn) is a decentralized application that allows you to mint NFTS from an interface.
 - By clicking on "BUY" there is the possibility to buy an NFT from a collection.
-- The price of 0.01 ETH (modifiable according to convenience) will be displayed in the Metamask wallet.
+- The price of 16 FUSE (modifiable according to convenience) will be displayed in the Metamask wallet.
 - Once the transaction commits, the amount of NFTS decreases.
 - The NFT is accessible from the wallet with a designation: "PCC"
 
 * Json + img files stored on Pinata Cloud (for testing)
 * network ropsten (tests): Url (address on Infura) + account (private key wallet).
-* import contract address in wallet: 0xE577704A583285eD5c1583d42125Cf0abE3cEb9C (import PCC tokens)
+* import contract address in wallet: 0xeDc6102bc832989Aa7A7De39881f7F16c704b5af (import PCC tokens)
 
 ## 🛠 Built With
 
