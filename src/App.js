@@ -85,6 +85,7 @@ function App() {
         let overrides = {
           from: accounts[0],
           value: data.cost,
+          gasPrice: ethers.utils.parseUnits("1", "gwei"),
         };
         const transaction = await contract.mint(accounts[0], 1, overrides);
         await transaction.wait();
