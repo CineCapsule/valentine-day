@@ -173,7 +173,7 @@ function App() {
           </div>
         </div>
         <div className="buyNft">
-          <h1>Mint a Valentine Day's PopCorn ! 🍿</h1>
+          <h1>Step 1: Mint a Valentine Day's PopCorn ! 🍿</h1>
           {error && <p>{error}</p>}
           <p className="count">{data.totalSupply} / 20</p>
           <p className="cost">
@@ -188,6 +188,12 @@ function App() {
               Withdraw
             </button>
           )}
+        </div>
+        <div className="watchNft">
+          <h1>Step 2: Watch your Valentine Day's PopCorn ! 🍿</h1>
+          <a href="https://tofunft.com/fuse/" title="TofuNFT">
+            At TofuNFT
+          </a>
         </div>
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
           <div className="col-xs-2 col-sm-2">
