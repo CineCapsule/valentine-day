@@ -33,7 +33,7 @@ I was inspired by tutorials and repos from HashLips 👄:
 
 * Json + img files stored on Pinata Cloud (for testing)
 * network ropsten (tests): Url (address on Infura) + account (private key wallet).
-* import contract address in wallet: 0xe18E334267A996Fc2fcC381ac97d0F0cd4b93b7A (import PCC tokens)
+* import contract address in wallet: 0x4291b543E00Fb0e96f3e2D4653F1276d067057A6 (import PCC tokens)
 
 ## 🛠 Built With
 
