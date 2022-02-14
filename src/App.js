@@ -104,7 +104,10 @@ function App() {
       const contract = new ethers.Contract(VDaddress, ValentineDay.abi, signer);
 
       try {
-        const transaction = await contract.withdraw();
+        let overrides = {
+          gasPrice: ethers.utils.parseUnits("1", "gwei"),
+        };
+        const transaction = await contract.withdraw(overrides);
         await transaction.wait();
         fetchData();
       } catch (err) {
