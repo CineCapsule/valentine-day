@@ -6,7 +6,7 @@ async function main() {
   const valentineday = await ValentineDay.deploy(
     "Pop Corn Collection",
     "PCC",
-    "ipfs://QmP4Eh7Jbwnn4ktgqtUP1BESiLRpy2FWozkUNdrYFq8m6n/"
+    "ipfs://QmRqnn7Kgiq4vZMHEm4wTgDmU6x8dtMZkjVSNhVDFpEGFt/"
   );
 
   await valentineday.deployed();
