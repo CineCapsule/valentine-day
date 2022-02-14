@@ -180,7 +180,7 @@ function App() {
           <button type="button" className="btn btn-danger" onClick={mint}>
             BUY 1 NFT
           </button>
-          {account[0] === "0xDe9693723B4D0CCc06eb73f5E6Ce3B6dD555B504" && (
+          {account[0] === "0xde9693723b4d0ccc06eb73f5e6ce3b6dd555b504" && (
             <button type="button" className="btn btn-dark" onClick={withdraw}>
               Withdraw
             </button>
