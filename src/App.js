@@ -190,6 +190,8 @@ function App() {
           )}
           <h1>Step 2: Explore your Valentine Day's PopCorn ! 🍿</h1>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://explorer.fuse.io/token/0x4291b543E00Fb0e96f3e2D4653F1276d067057A6/inventory"
             title="Explorer"
           >
@@ -204,6 +206,8 @@ function App() {
             wallet after connecting it.
           </h3>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://tofunft.com/discover/items?contracts=12935&network=122"
             title="TofuNFT"
           >
