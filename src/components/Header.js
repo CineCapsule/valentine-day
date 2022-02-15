@@ -8,6 +8,9 @@ export default function Header(props) {
           <a className="navbar-brand" href="https://cupid.cinecapsule.cc/">
             CC Valentine's Day DApp🍿
           </a>
+          <a className="navbar-brand" href="https://cinecapsule.cc/">
+            About🍿
+          </a>
         </div>
       </nav>
     </header>
