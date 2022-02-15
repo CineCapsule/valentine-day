@@ -188,11 +188,28 @@ function App() {
               Withdraw
             </button>
           )}
-        </div>
-        <div className="watchNft">
-          <h1>Step 2: Watch your Valentine Day's PopCorn ! 🍿</h1>
-          <a href="https://tofunft.com/fuse/" title="TofuNFT">
-            At TofuNFT
+          <h1>Step 2: Explore your Valentine Day's PopCorn ! 🍿</h1>
+          <a
+            href="https://explorer.fuse.io/token/0x4291b543E00Fb0e96f3e2D4653F1276d067057A6/inventory"
+            title="Explorer"
+          >
+            <button type="button" className="btn btn-danger">
+              At Fuse Explorer
+            </button>
+          </a>
+          <h1>Step 3: List your Valentine Day's PopCorn ! 🍿</h1>
+          <h2>Approval in progress by TofuNFT team ...</h2>
+          <h3>
+            From the My NFTs in the top right menu to see the NFTs in your
+            wallet after connecting it.
+          </h3>
+          <a
+            href="https://tofunft.com/discover/items?contracts=12935&network=122"
+            title="TofuNFT"
+          >
+            <button type="button" className="btn btn-danger">
+              At TofuNFT
+            </button>
           </a>
         </div>
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
