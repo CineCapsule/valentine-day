@@ -70,7 +70,7 @@ To run the application you'll need:
 Now go to project folder and run:
 
 ```bash
-$ cd valentinedaysnfts
+$ cd ValentineDay_DApp
 
 # install the dependencies
 $ npm install
