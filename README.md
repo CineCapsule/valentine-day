@@ -87,12 +87,6 @@ $ npx hardhat run scripts/deploy.js --network ropsten
 
 
 <p align="center">
-<a href="https://www.linkedin.com/in/marjorie-ngoupende-dev/" target="_blank" >
-  <img alt="Linkedin - Marjorie Ngoupende" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
-</a>
-<a href="mailto:marjorie.ngoupende@gmail.com" target="_blank" >
-  <img alt="Email - Marjorie Ngoupende" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
-</a> 
 <br/>
   Made with :☕ and ❤️ by <b>CineCapsule Dev Team</b>.
 <p/>
