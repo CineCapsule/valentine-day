@@ -94,5 +94,5 @@ $ npx hardhat run scripts/deploy.js --network ropsten
   <img alt="Email - Marjorie Ngoupende" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
 </a> 
 <br/>
-  Made with :☕ and ❤️ by <b>Marjorie Ngoupende</b>.
+  Made with :☕ and ❤️ by <b>CineCapsule Dev Team</b>.
 <p/>
