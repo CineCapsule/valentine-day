@@ -14,20 +14,20 @@ contract ValentineDay is ERC721Enumerable, Ownable {
 
     string public baseURI;
     string public baseExtension = ".json";
-    uint256 public cost = 0.01 ether;
+    uint256 public cost = 16 ether;
     uint256 public maxSupply = 20;
-    uint256 public maxMintAmount = 20;
+    uint256 public maxMintAmount = 2;
     bool public paused = false;
     mapping(address => bool) public whitelisted;
 
     //deploy the contract
-        constructor(
+    constructor(
         string memory _name,
         string memory _symbol,
         string memory _initBaseURI
     ) ERC721(_name, _symbol) {
         setBaseURI(_initBaseURI);
-        mint(msg.sender, 5);
+        mint(msg.sender, 2);
     }
 
     // internal
@@ -55,7 +55,7 @@ contract ValentineDay is ERC721Enumerable, Ownable {
     }
 
     //Retrieve the NFTS that an owner address has
-        function walletOfOwner(address _owner)
+    function walletOfOwner(address _owner)
         public
         view
         returns (uint256[] memory)

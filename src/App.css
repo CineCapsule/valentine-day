@@ -32,7 +32,7 @@ button.btn.btn-danger {
   margin: 20px !important;
 }
 .buyNft {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .footer {
   width: 100%;
@@ -47,7 +47,7 @@ button.btn.btn-danger {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 /*Responsive*/
 @media only screen and (max-width: 855px) {

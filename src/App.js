@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import ValentineDay from "./artifacts/ValentineDay.json";
+import ValentineDay from "./artifacts/contracts/ValentineDay.sol/ValentineDay.json";
 import "./App.css";
 //My generated images
 import img1 from "./img/1.png";
@@ -21,7 +21,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //Address where the contract was deployed
-const VDaddress = "0xF2b9d1E3EFBb85720ed26B5a36B4D35462f12F01";
+const VDaddress = "0x4291b543E00Fb0e96f3e2D4653F1276d067057A6";
 
 function App() {
   const [error, setError] = useState("");
@@ -85,6 +85,7 @@ function App() {
         let overrides = {
           from: accounts[0],
           value: data.cost,
+          gasPrice: ethers.utils.parseUnits("1", "gwei"),
         };
         const transaction = await contract.mint(accounts[0], 1, overrides);
         await transaction.wait();
@@ -98,15 +99,15 @@ function App() {
   //Transfer money from the contract to the contract owner's address
   async function withdraw() {
     if (typeof window.ethereum !== "undefined") {
-      let accounts = await window.ethereum.request({
-        method: "eth_requestAccounts",
-      });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(VDaddress, ValentineDay.abi, signer);
 
       try {
-        const transaction = await contract.withdraw();
+        let overrides = {
+          gasPrice: ethers.utils.parseUnits("1", "gwei"),
+        };
+        const transaction = await contract.withdraw(overrides);
         await transaction.wait();
         fetchData();
       } catch (err) {
@@ -172,38 +173,53 @@ function App() {
           </div>
         </div>
         <div className="buyNft">
-          <h1>Mint a Valentine Day's PopCorn ! 🍿</h1>
+          <h1>Step 1: Mint a Valentine Day's PopCorn ! 🍿</h1>
           {error && <p>{error}</p>}
           <p className="count">{data.totalSupply} / 20</p>
           <p className="cost">
-            Each PopCorn NFT costs {data.cost / 10 ** 18} eth (excluding gas
-            fees)
+            Each PopCorn NFT costs ~$10 = ~9€ = {data.cost / 10 ** 18} FUSE (+
+            0.00016 FUSE gas fee)
           </p>
           <button type="button" className="btn btn-danger" onClick={mint}>
-            BUY
+            BUY 1 NFT
           </button>
-          {account[0] === "0x957e3b7c98ca23dbc89b7358f90ac1a8d5b2655e" && (
+          {account[0] === "0xde9693723b4d0ccc06eb73f5e6ce3b6dd555b504" && (
             <button type="button" className="btn btn-dark" onClick={withdraw}>
               Withdraw
             </button>
           )}
+          <h1>Step 2: Explore your Valentine Day's PopCorn ! 🍿</h1>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://explorer.fuse.io/token/0x4291b543E00Fb0e96f3e2D4653F1276d067057A6/inventory"
+            title="Explorer"
+          >
+            <button type="button" className="btn btn-danger">
+              At Fuse Explorer
+            </button>
+          </a>
+          <h1>Step 3: List your Valentine Day's PopCorn ! 🍿</h1>
+          <h2>Approval in progress by TofuNFT team ...</h2>
+          <h3>
+            From the My NFTs in the top right menu to see the NFTs in your
+            wallet after connecting it.
+          </h3>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://tofunft.com/discover/items?contracts=12935&network=122"
+            title="TofuNFT"
+          >
+            <button type="button" className="btn btn-danger">
+              At TofuNFT
+            </button>
+          </a>
         </div>
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
           <div className="col-xs-2 col-sm-2">
             <a
-              href="#"
-              className="btn btn-lg btn-block kpx_btn-facebook"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Facebook"
-            >
-              <i className="fa fa-facebook fa-2x"></i>
-              <span className="hidden-xs"></span>
-            </a>
-          </div>
-          <div className="col-xs-2 col-sm-2">
-            <a
-              href="#"
+              href="https://twitter.com/cine_capsule"
               className="btn btn-lg btn-block kpx_btn-twitter"
               data-toggle="tooltip"
               data-placement="top"
@@ -215,13 +231,25 @@ function App() {
           </div>
           <div className="col-xs-2 col-sm-2">
             <a
-              href="#"
-              className="btn btn-lg btn-block kpx_btn-google-plus"
+              href="https://www.instagram.com/cine_capsule/?hl=en"
+              className="btn btn-lg btn-block kpx_btn-instagram"
               data-toggle="tooltip"
               data-placement="top"
-              title="Google Plus"
+              title="Instagram"
             >
-              <i className="fa fa-google-plus fa-2x"></i>
+              <i className="fa fa-instagram fa-2x"></i>
+              <span className="hidden-xs"></span>
+            </a>
+          </div>
+          <div className="col-xs-2 col-sm-2">
+            <a
+              href="https://www.facebook.com/cinecapsuleofficial/"
+              className="btn btn-lg btn-block kpx_btn-facebook"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Facebook"
+            >
+              <i className="fa fa-facebook fa-2x"></i>
               <span className="hidden-xs"></span>
             </a>
           </div>

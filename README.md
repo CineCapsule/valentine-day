@@ -12,7 +12,6 @@
 [![Made by MarjorieNgoupende](https://img.shields.io/badge/made%20by-MarjorieNgoupende-blueviolet?style=flat-square)](https://www.linkedin.com/in/marjorie-ngoupende-dev/)
 </div>
 
-
 ## ℹ About
 
 - This decentralized application allows you to buy or mint a collection of funny popcorn NFTS.
@@ -28,63 +27,64 @@ I was inspired by tutorials and repos from HashLips 👄:
 
 - Valentine Day's App (popcorn) is a decentralized application that allows you to mint NFTS from an interface.
 - By clicking on "BUY" there is the possibility to buy an NFT from a collection.
-- The price of 0.01 ETH (modifiable according to convenience) will be displayed in the Metamask wallet.
+- The price of 16 FUSE (modifiable according to convenience) will be displayed in the Metamask wallet.
 - Once the transaction commits, the amount of NFTS decreases.
 - The NFT is accessible from the wallet with a designation: "PCC"
 
 * Json + img files stored on Pinata Cloud (for testing)
 * network ropsten (tests): Url (address on Infura) + account (private key wallet).
-* import contract address in wallet: 0xF2b9d1E3EFBb85720ed26B5a36B4D35462f12F01 (import PCC tokens)
-
+* import contract address in wallet: 0x4291b543E00Fb0e96f3e2D4653F1276d067057A6 (import PCC tokens)
 
 ## 🛠 Built With
 
 This project was developed with the following technologies:
 
-#### **Frontend** 
-  - [ReactJs](https://pt-br.reactjs.org/)
-  - [EtherJs](https://docs.ethers.io/v5/)
-  - [Bootstrap](https://getbootstrap.com/)
+#### **Frontend**
+
+- [ReactJs](https://pt-br.reactjs.org/)
+- [EtherJs](https://docs.ethers.io/v5/)
+- [Bootstrap](https://getbootstrap.com/)
 
 #### **Backend**
- - [NodeJs](https://nodejs.org/en/)
- 
+
+- [NodeJs](https://nodejs.org/en/)
+
 #### **Blockchain and Smart Contracts** <sub><sup>Solidity</sup></sub>
-  - [Solidity](https://docs.soliditylang.org/)
-  - [Hardat](https://hardhat.org/)
-  - [Infura](https://infura.io/)
-  - [Pinata Cloud](https://www.pinata.cloud/)
-  - [MetaMask](https://metamask.io/)
- 
+
+- [Solidity](https://docs.soliditylang.org/)
+- [Hardat](https://hardhat.org/)
+- [Infura](https://infura.io/)
+- [Pinata Cloud](https://www.pinata.cloud/)
+- [MetaMask](https://metamask.io/)
 
 ### 🕹 Requirements
 
 To run the application you'll need:
-* [Git](https://git-scm.com)
-* [Node](https://nodejs.org/)
-* [npm](https://www.npmjs.com/)
-* [Hardhat](https://hardhat.org/)
-- Clone the repository:
-  * ```$ git clone https://github.com/Margotte83/ValentineDay_DApp```
+
+- [Git](https://git-scm.com)
+- [Node](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Hardhat](https://hardhat.org/)
+
+* Clone the repository:
+  - `$ git clone git@github.com:bertux/valentine-day.git`
 
 Now go to project folder and run:
 
 ```bash
-$ cd ValentineDay_DApp
+$ cd valentine-day
 
 # install the dependencies
 $ npm install
 
-# run 
-$ npm start
-
 # deploy de contracts on the blockchain
 $ npx hardhat run scripts/deploy.js --network ropsten
 
+# run
+$ npm start
 ```
 
  <hr>
-
 
 <p align="center">
 <br/>
