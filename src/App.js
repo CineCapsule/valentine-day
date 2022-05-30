@@ -174,7 +174,11 @@ function App() {
         </div>
         <div className="buyNft">
           <h1>Step 1: Mint a Valentine Day's PopCorn ! 🍿</h1>
-          {error && <p>{error}</p>}
+          {error && (
+            <p className="buy">
+              {"To buy these Nfts please connect to the Fuse Mainnet network"}
+            </p>
+          )}
           <p className="count">{data.totalSupply} / 20</p>
           <p className="cost">
             Each PopCorn NFT costs ~$10 = ~9€ = {data.cost / 10 ** 18} FUSE (+
@@ -200,11 +204,11 @@ function App() {
             </button>
           </a>
           <h1>Step 3: List your Valentine Day's PopCorn ! 🍿</h1>
-          <h2>Approval in progress by TofuNFT team ...</h2>
-          <h3>
+          <p>Approval in progress by TofuNFT team ...</p>
+          <p>
             From the My NFTs in the top right menu to see the NFTs in your
             wallet after connecting it.
-          </h3>
+          </p>
           <a
             target="_blank"
             rel="noreferrer"
@@ -216,10 +220,13 @@ function App() {
             </button>
           </a>
         </div>
+        {/* //Socials links// */}
         <div className="row kpx_row-sm-offset-3 kpx_socialButtons">
           <div className="col-xs-2 col-sm-2">
             <a
               href="https://twitter.com/cine_capsule"
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-lg btn-block kpx_btn-twitter"
               data-toggle="tooltip"
               data-placement="top"
@@ -232,6 +239,8 @@ function App() {
           <div className="col-xs-2 col-sm-2">
             <a
               href="https://www.instagram.com/cine_capsule/?hl=en"
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-lg btn-block kpx_btn-instagram"
               data-toggle="tooltip"
               data-placement="top"
@@ -244,6 +253,8 @@ function App() {
           <div className="col-xs-2 col-sm-2">
             <a
               href="https://www.facebook.com/cinecapsuleofficial/"
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-lg btn-block kpx_btn-facebook"
               data-toggle="tooltip"
               data-placement="top"
