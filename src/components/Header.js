@@ -5,10 +5,10 @@ export default function Header(props) {
     <header className="App-header">
       <nav className="navbar fixed-top navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="https://cupid.cinecapsule.cc/">
+          <a className="navbar-brand" href="">
             CineCapsule Valentine's Day DApp🍿
           </a>
-          <a className="navbar-brand" href="https://cinecapsule.cc/">
+          <a className="navbar-brand" href="cupid.cinecapsule.cc/">
             About🍿
           </a>
         </div>
