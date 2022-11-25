@@ -173,7 +173,7 @@ function App() {
           </div>
         </div>
         <div className="buyNft">
-          <h1>Step 1: Mint a Valentine Day's PopCorn ! 🍿</h1>
+          <h1>Mint a Valentine Day's PopCorn ! 🍿</h1>
           {error && (
             <p className="buy">
               {"To buy these Nfts please connect to the Fuse Mainnet network"}
@@ -192,7 +192,7 @@ function App() {
               Withdraw
             </button>
           )}
-          <h1>Step 2: Explore your Valentine Day's PopCorn ! 🍿</h1>
+          <h1>Explore your Valentine Day's PopCorn ! 🍿</h1>
           <a
             target="_blank"
             rel="noreferrer"
@@ -203,7 +203,7 @@ function App() {
               At Fuse Explorer
             </button>
           </a>
-          <h1>Step 3: List your Valentine Day's PopCorn ! 🍿</h1>
+          <h1>List your Valentine Day's PopCorn ! 🍿</h1>
           <p>Approval in progress by TofuNFT team ...</p>
           <p>
             From the My NFTs in the top right menu to see the NFTs in your
